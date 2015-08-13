@@ -58,6 +58,12 @@ style="background-image: {{#if @blog.cover}}url({{@blog.cover}}){{else}}no-cover
 
 
 
+
+
+
+	{{^is "paged, post, page"}}
+	<div class="start-header-bottom">
+
 <div align="left">
 
 <a class="twitter-timeline" href="https://twitter.com/search?q=corneezius" width="350" height="700" data-widget-id="627371707372695553" data-chrome="nofooter noborders">Reviews</a>
@@ -66,8 +72,7 @@ style="background-image: {{#if @blog.cover}}url({{@blog.cover}}){{else}}no-cover
 </div>
 
 
-	{{^is "paged, post, page"}}
-	<div class="start-header-bottom">
+	
 		<div class="start-blog-header-info">
 			{{#is "home"}}
 			<h1 class="start-blog-title" id="responsive-headline">
